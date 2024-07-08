@@ -1,0 +1,17 @@
+
+public class Test1 {
+	public static void main(String[] args) {
+		int i = 65;
+		int count = 1;
+		
+		
+		for( ; count <= 28; count++) {
+			for ( ; i <= count; i++) {
+				System.out.printf("%d", (char)i);
+			}
+			System.out.println();			
+		}
+		
+	}
+
+}

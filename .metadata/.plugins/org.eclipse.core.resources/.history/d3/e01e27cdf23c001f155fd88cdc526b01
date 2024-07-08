@@ -1,0 +1,21 @@
+
+public class SungjukMgmt1 {
+
+	public static void main(String[] args) {
+		Student[] array = new Student[2]; // array는 시작 주소를 알고 있고, heap에 Student 내의 공간이 생김 = 학생이 들어갈 공간을 만듦
+		
+		
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		for(int i = 0; i < 2; i++) {
+			System.out.print("학번 : "); String hakbun = sc.next();
+			System.out.print("국어 : "); int kor = sc.nextInt();			
+			System.out.print("영어 : "); int eng = sc.nextInt();
+			System.out.print("수학 : "); int math = sc.nextInt();
+			
+			array[i].hakbun = hakbun; // 학번 입력하여 넣을 때 에러 : array[i] is null 			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class Test1 {
+	public static void main(String[] args) {
+		int i = 1; // 아래로 가는애
+		
+		for (; i <= 26; i++) {
+			
+			int j = 1; // 옆으로 가는애
+			for (; j <= i; j++) { 
+				System.out.print((char)(j + 64));
+			}
+			System.out.println();
+		}
+	}
+}

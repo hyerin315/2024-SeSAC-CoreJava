@@ -1,0 +1,37 @@
+
+public class LoopDemo {
+
+	public static void main(String[] args) {
+//		// A ~ Z까지 출력
+//		int i = 65; // initialization 
+//		
+//		for ( ; i <=90; ) {// 조건 나머지는 다 밖으로 빼도 됨
+//			System.out.printf("%c\t", (char)i);
+//			i++;
+//		}
+//		System.out.println();
+		
+//		int i = 90; // initialization 
+//		for ( ; i >= 65; ) {// 조건 나머지는 다 밖으로 빼도 됨
+//			System.out.printf("%c\t", (char)i);
+//			i -= 3; // i = i - 3
+//		}
+//		System.out.println();
+		
+		int i = 65; // initialization 
+		int a = 1;
+		for ( ; i <= 90; ) {// 조건 나머지는 다 밖으로 빼도 됨
+			if (a % 5 == 0) {
+				System.out.printf("%c\t", (char)i);
+			} else {
+				System.out.println("\n");
+			}
+			i++;
+			a++;
+			
+		}
+		System.out.println();
+
+	}
+
+}
