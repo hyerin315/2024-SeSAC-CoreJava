@@ -9,7 +9,7 @@ public class HelloWorld7 {
 	}
 }
 class Employee{
-	static void print() { //satic | class method
+	static void print() { //static | class method
 		System.out.println("Hello, World");
 	}
 	

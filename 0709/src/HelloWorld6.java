@@ -5,10 +5,10 @@
 
 public class HelloWorld6 {
 	public static void main(String[] args) {
-		//HelloWorld6 hw = new HelloWorld6();
+		 //HelloWorld6 hw = new HelloWorld6();
 		 new HelloWorld6().print(); // 이렇게 작성해도 됨
 	}
-	static print() { // member | instance method
+	void print() { // member | instance method
 		System.out.println("Hello, World"); 
 	}
 }
