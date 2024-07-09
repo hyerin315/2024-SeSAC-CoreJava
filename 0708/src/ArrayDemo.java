@@ -18,12 +18,12 @@ public class ArrayDemo {
 //		
 		// 초기화 방법
 		// 1. 첫번째 방법
-		char[] array = null;
-		array = new char[] {'a', 'b', 'c', 'd'} ; 
+//		char[] array = null;
+//		array = new char[] {'a', 'b', 'c', 'd'} ; 
 		
 		// 2. 두번째 방법
 		// 한 번에 초기화 initialization 
-		char[] array = {'a', 'b', 'c', 'd'}; //선언과 동시에 초기화
+//		char[] array = {'a', 'b', 'c', 'd'}; //선언과 동시에 초기화
 		// 단점 - 따로 분리하여 다른 라인에 적을 수 없음
 		// ex)
 		// char [] array = null;

@@ -50,7 +50,7 @@ public class SungjukMgmt {
 							chulsu.hakbun, chulsu.kor, chulsu.eng, chulsu.math, 
 							chulsu.tot, chulsu.avg, chulsu.grade);
 			System.out.print("Again(y/n) ? ");
-			y_n = sc.next();
+			y_n = sc.next(); 
 			
 	} while(y_n.equals("Y") || y_n.equals("y")); // String(문자형)은 equals로 비교
 	System.out.println("Program is over..."); 
