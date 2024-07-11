@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="Product"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="CallbyRefDemo"/>
     <fullyQualifiedTypeName name="CallbyRefDemo1"/>
     <fullyQualifiedTypeName name="VariableArgumentDemo"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="Student"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
+    <fullyQualifiedTypeName name="Product"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="MyDate"/>
+    <fullyQualifiedTypeName name="Employee"/>
+    <fullyQualifiedTypeName name="InitializationBlock"/>
+    <fullyQualifiedTypeName name="Calc"/>
+    <fullyQualifiedTypeName name="Output"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Student"/>
+    <fullyQualifiedTypeName name="Mammal"/>
 </qualifiedTypeNameHistroy>
