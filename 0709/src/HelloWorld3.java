@@ -7,12 +7,12 @@ public class HelloWorld3 {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(Demo.str); // str : 클래스 안에서만 찾으므로 클래스 안에 없다면 집주소를 알려줘야함
+		System.out.println(Demo1.str); // str : 클래스 안에서만 찾으므로 클래스 안에 없다면 집주소를 알려줘야함
 		
 	}
 
 }
 
-class Demo {
+class Demo1 {
 	static String str = "Hello, World"; 
 }

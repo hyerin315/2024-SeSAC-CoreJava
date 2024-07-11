@@ -12,8 +12,8 @@
 /*
  * Method를 호출하는 방법 3가지
  * 1) Call(Pass : 객체지향에서는 이렇게 말함) by Name
- * 2) Call(Pass) by Value
- * 3) Call(Pass) by Reference
+ * 2) Call(Pass) by Value : 값을 가져옴
+ * 3) Call(Pass) by Reference : 주소가 넘어감
  */
 
 public class MethodDemo {
