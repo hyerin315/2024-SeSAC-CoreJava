@@ -1,14 +1,18 @@
 package com.example.model;
 
 public class PatientVO {
-	private int number;    //환자번호
-	private String code;    //진료코드
-	private int days;        //입원일수
-	private int age;         //나이
-	private String dept;   //진찰부서
-	private int operFee;  //진찰비
+	private int number;        //환자번호
+	private String code;       //진료코드
+	private int days;          //입원일수
+	private int age;           //나이
+	private String dept;       //진찰부서
+	private int operFee;       //진찰비
 	private int hospitalFee;   //입원비
-	private int money;   //진료비
+	private int money;         //진료비
+	
+	public PatientVO() { //기본 생성자
+		
+	}
 	
 	public PatientVO(int number, String code, int days, int age) {
 		this.number = number;
@@ -53,17 +57,35 @@ public class PatientVO {
 		return number;
 	}
 
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	
 	public String getCode() {
 		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 	public int getDays() {
 		return days;
 	}
 
+	public void setDays(int days) {
+		this.days = days;
+	}
+	
 	public int getAge() {
 		return age;
 	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 
 	@Override 
 	public String toString(){
