@@ -64,16 +64,16 @@ public class PatientView {
 	//  메뉴
 	private int showMenu() {
 		System.out.println("┌ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ┐");
-		System.out.println("│     새싹 정형외과 환자 관리 프로그램      │");
+		System.out.println("│     새싹 정형외과 환자 관리 프로그램    │");
 		System.out.println("└ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ┘");
 	
 			System.out.println("┌ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ┐");
-			System.out.println("│1. 환자 등록                          │");
-			System.out.println("│2. 환자 검색                          │");
-			System.out.println("│3. 환자 목록                          │");
-			System.out.println("│4. 환자 수정                          │");
-			System.out.println("│5. 환자 삭제                          │");
-			System.out.println("│99. 프로그램 종료                      │");
+			System.out.println("│ 1. 환자 등록                      │");
+			System.out.println("│ 2. 환자 검색                      │");
+			System.out.println("│ 3. 환자 목록                      │");
+			System.out.println("│ 4. 환자 수정                      │");
+			System.out.println("│ 5. 환자 삭제                      │");
+			System.out.println("│ 99. 프로그램 종료                  │");
 			System.out.println("└ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ┘");
 			System.out.println("원하시는 메뉴 번호를 선택해주세요 >>  ");
 			return scan.nextInt();
