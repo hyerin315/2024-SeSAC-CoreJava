@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>상품목록</h3>
+<div th:if="${session.type == '판매자'}">
+	<a href="/product/add">상품등록</a><br/>
+</div>
+<div th:if="${session.type == '구매자'}">
+	<select id="seltype">
+		<option>판매자</option>
+		<option>제품명</option>
+		<option>가격대</option>
+	</select>
+	<input type="text" id="search">
+	<input type="button" value="검색" onclick="a()">
+</div>
+<table border="1">
+<tr><th>num</th><th>name</th><th>price</th><th>seller</th><th>product img</th></tr>
+<tr th:each="p:${list}">
+	<td th:text="${p.num}"></td>
+	<td><a th:text="${p.name}" th:href="@{/product/detail(num=${p.num})}"></a></td>
+	<td th:text="${p.price}"></td>
+	<td th:text="${p.seller.id}"></td>
+	<td>
+		<img th:src="@{/product/read-img(fname=${p.img})}" style="width:150px; height:150px">
+	</td>
+</tr>
+</table>
+</body>
+</html>

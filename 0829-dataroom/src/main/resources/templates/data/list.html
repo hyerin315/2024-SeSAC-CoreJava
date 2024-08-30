@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>자료실</h3>
+<a href="/data/add">글 작성</a><br/>
+<table border="1">
+<tr><th>num</th><th>title</th><th>자료명</th></tr>
+<tr th:each="a:${list}">
+	<td th:text="${a.num}"></td>
+	<td><a th:text="${a.title}" th:href="@{/data/detail(num=${a.num})}"></a></td>
+	<td th:text="${a.data}"></td>
+</tr>
+</table>
+</body>
+</html>

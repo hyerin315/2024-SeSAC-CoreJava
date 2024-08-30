@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>thymeleaf 게시판</h3>
+name:[[${name}]] <br/>
+tel:[[${tel}]] <br/>
+<a th:href="@{/test/test2(name=${name})}" th:text="${name}"></a><br/>
+<input type="text" th:value="${tel}"><br/>
+<div th:if="${session.loginId == null}">
+ 로그인 전에 보이는 영역<br/>
+ <a href="/test/test3">로그인</a>
+</div>
+
+<div th:if="${session.loginId != null}">
+ 로그인 후에 보이는 영역<br/>
+ <a href="/test/test4">로그아웃</a>
+</div>
+
+<h4>목록출력</h4>
+<ul>
+	<li th:each="s:${list}">[[${s}]]</li>
+</ul>
+</body>
+</html>
+
+
+
+

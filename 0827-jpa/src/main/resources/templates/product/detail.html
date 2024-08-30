@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.onload = () => {
+	f.style.display = 'none'; //이미지 수정폼 화면에  안보이게 설정
+}
+
+const a = () => {
+	f.style.display = '';
+}
+
+const b = () => {
+	f.style.display = 'none';
+}
+</script>
+</head>
+<body>
+<h3>상세페이지</h3>
+<img th:src="@{/product/read-img(fname=${prod.img})}" style="width:150px; height:150px"><br/>
+<input type="button" value="이미지 수정" onclick="a()">
+<form name="f" action="/product/edit-img" method="post" enctype="multipart/form-data">
+새 이미지:<input type="file" name="f"><br/>
+<input type="hidden" name="num" th:value="${prod.num}">
+<input type="submit" value="수정">
+<input type="submit" value="수정취소" onclick="b()">
+</form>
+<form action="/product/edit" method="post">
+<table border="1">
+<tr>
+	<th>num</th>
+	<td>
+		<input type="text" th:value="${prod.num}" name="num" readonly>
+	</td>
+</tr>
+<tr>
+	<th>name</th>
+	<td>
+		<input type="text" th:value="${prod.name}" name="name" readonly>
+	</td>
+</tr>
+<tr>
+	<th>price</th>
+	<td>
+		<input type="text" th:value="${prod.price}" name="price" readonly>
+	</td>
+</tr>
+<tr>
+	<th>amount</th>
+	<td>
+		<input type="text" th:value="${prod.amount}" name="amount" readonly>
+	</td>
+</tr>
+</table>
+<input type="submit" value="수정">
+</form>
+</body>
+</html>
