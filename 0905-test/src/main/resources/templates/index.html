@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+[[${msg}]]<br/>
+<div th:if="${session.loginId == null}">
+	<a href="/member/join">회원가입</a><br/>
+	<a href="/member/login">로그인</a><br/>
+	<a href="/guestbook/list">방명록</a><br/>
+</div>
+
+<div th:if="${session.loginId != null}">
+	[[${session.loginId }]]님의 타입은 [[${session.type }]] 입니다<br/>
+	<a href="/member/detail">내정보확인</a><br/>
+	<a href="/member/logout">로그아웃</a><br/>
+	<a href="/member/out">탈퇴</a><br/>
+	<a href="/board/list">글목록</a><br/>
+	<div th:if="${session.type == '판매자'}">판매자 메뉴<br/>
+		<a href="/product/list">내 상품 목록</a><br/>	
+	</div>
+	<div th:if="${session.type == '구매자'}">구매자 메뉴
+		<a href="/product/list">전체 상품 목록</a><br/>
+	</div>
+</div>
+</body>
+</html>

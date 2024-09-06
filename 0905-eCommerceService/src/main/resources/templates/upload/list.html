@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>파일 목록</h3>
+<a href="/upload/form">파일 등록</a><br/>
+<ul>
+	<li th:each="f:${files}">
+		[[${f}]]<br/>
+		<img th:src="@{/upload/read-img(fname=${f})}"> <!-- img 바이너리값(픽셀값) -->
+	</li>
+</ul>
+</body>
+</html>

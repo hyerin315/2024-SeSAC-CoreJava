@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>글 목록</h3>
+<a href="/guestbook/add">글작성</a>
+<table border="1">
+<tr><th>num</th><th>writer</th><th>wdate</th><th>content</th></tr>
+<tr th:each="g:${list}">
+	<td th:text="${g.num}"></td>
+	<td th:text="${g.writer}"></td>
+	<td th:text="${g.wdate}"></td>
+	<td th:text="${g.content}"></td>
+</tr>
+</table>
+</body>
+</html>

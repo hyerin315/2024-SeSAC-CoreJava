@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>자료실</h3>
+<ul>
+	<li th:each="f:@{list}">
+		<a th:text="${f}" th:href="@{/download/down(fname=${f})}"></a>
+	</li>
+</ul>
+</body>
+</html>
